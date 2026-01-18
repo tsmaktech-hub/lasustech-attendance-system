@@ -1,5 +1,5 @@
 
-import { College } from './types';
+import { College } from './types.ts';
 
 export const LOGO_URL = "https://api.dicebear.com/7.x/initials/svg?seed=LASUSTECH&backgroundColor=0084ca&fontFamily=Arial&fontWeight=700";
 

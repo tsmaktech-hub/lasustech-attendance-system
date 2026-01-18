@@ -1,7 +1,7 @@
 
 // Correctly import types from types.ts and constants from constants.ts
-import { Student, Course, Department } from '../types';
-import { COLLEGES, ENGINEERING_100L_COURSES } from '../constants';
+import { Student, Course, Department } from '../types.ts';
+import { COLLEGES, ENGINEERING_100L_COURSES } from '../constants.ts';
 
 const FIRST_NAMES = ["Abiola", "Bayo", "Chidi", "Daramola", "Efe", "Fadekemi", "Gbenga", "Hassan", "Ibrahim", "Jumoke", "Kayode", "Lekan", "Musa", "Nneka", "Olawale", "Patience", "Quasim", "Rofiat", "Segun", "Taiwo", "Uche", "Victoria", "Wale", "Yemi", "Zainab"];
 const LAST_NAMES = ["Adebayo", "Bello", "Chukwu", "Dada", "Eze", "Fashola", "Gbadamosi", "Hamzat", "Idris", "Johnson", "Kehinde", "Lawal", "Mohammed", "Nwachukwu", "Okoro", "Popoola", "Raji", "Salami", "Tijani", "Usman", "Williams", "Yusuf", "Balogun", "Ojo", "Sanni"];

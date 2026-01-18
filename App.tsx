@@ -1,8 +1,8 @@
 
 import React, { useState, useEffect, useRef } from 'react';
-import { AppState, User, College, Department, Course, Student } from './types';
-import { COLLEGES } from './constants';
-import { generateStudents, generateCoursesForLevel, getAttendance, saveAttendance } from './services/dataService';
+import { AppState, User, College, Department, Course, Student } from './types.ts';
+import { COLLEGES } from './constants.ts';
+import { generateStudents, generateCoursesForLevel, getAttendance, saveAttendance } from './services/dataService.ts';
 
 // Standard University Logo Icon (SVG)
 const UniversityIcon = ({ className }: { className?: string }) => (
@@ -30,9 +30,6 @@ export default function App() {
   const [attendanceData, setAttendanceData] = useState<any>(getAttendance());
 
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-
-  // Note: Auto-login session restoration was removed to satisfy the requirement 
-  // that reloads always return the user to the Login Page.
 
   // Inactivity Timeout Logic (1 minute)
   useEffect(() => {
